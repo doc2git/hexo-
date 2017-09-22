@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<!--<![endif]--><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+  <!-- Start of Baidu Transcode -->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="mobile-agent" content="format=html5;url=http://www.jianshu.com/p/3884e5cb63e5">
+  <!-- End of Baidu Transcode -->
+
+    <meta name="description" content="原文发表在我的个人博客。前言折腾hexo有几天时间了，配合NexT主题，大爱！虽然我写博客主要是用来记录自己的一些知识积累，并不强求有多少人来看，hexo本身已经很优秀了，但有些地方对于强迫症来说还是忍不住想要定制和优化，这样才能让自己更爽~~而且折腾的过程中，也可以学到不少新的知识。静态资源优化主要是压缩html,css,js等等静态资源，可以适当减少请求的数据量，主要用到gulp和一些相...">
+
+  <meta name="360-site-verification" content="604a14b53c6b871206001285921e81d8">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/3884e5cb63e5">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="简书">
+
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3829473">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="hexo定制&amp;优化" property="twitter:title">
+  <meta content="原文发表在我的个人博客。前言折腾hexo有几天时间了，配合NexT主题，大爱！虽然我写博客主要是用来记录自己的一些知识积累，并不强求有多少人来看，hexo本身已经很优秀了，但有些地方对于强迫症来说还是忍不住想要定制和优化，这样才能让自己更爽~~而且折腾的过程中，也可以学到不少新的知识。静态资源优化主要是压缩html,css,js等等静态资源，可以适当减少请求的数据量，主要用到gulp和一些相关的插件来实现，直接列出我的dependencies.\&quot;dependencies\&quot;:{\&quot;gulp\&quot;:\&quot;^3.9.1\&quot;,\&quot;gulp-htmlcl..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/3884e5cb63e5" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="hexo定制&amp;优化">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/3884e5cb63e5">
+  <meta property="og:description" content="原文发表在我的个人博客。前言折腾hexo有几天时间了，配合NexT主题，大爱！虽然我写博客主要是用来记录自己的一些知识积累，并不强求有多少人来看，hexo本身已经很优秀了，但有些地方对于强迫症来...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/3829473">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/3829473">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+
+    <title>hexo定制&amp;优化 - 简书</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="mbeZChRH8ct7bV+dVyF5FzuCCXBkLFjDNfruDpurHPsRdItcY+iA4dxRbLlBLaCA69pq7h0Z3FwN4s9KzUsukA==">
+
+  <link rel="stylesheet" media="all" href="web-12a5f8fcc34535aa91de.css">
+  
+  <link rel="stylesheet" media="all" href="entry-0a03cade4dfc10c5a79b.css">
+
+  <link href="favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn2.jianshu.io/assets/apple-touch-icons/57-a6f1f1ee62ace44f6dc2f6a08575abd3c3b163288881c78dd8d75247682a4b27.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn2.jianshu.io/assets/apple-touch-icons/72-fb9834bcfce738fd7b9c5e31363e79443e09a81a8e931170b58bc815387c1562.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn2.jianshu.io/assets/apple-touch-icons/76-49d88e539ff2489475d603994988d871219141ecaa0b1a7a9a1914f4fe3182d6.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn2.jianshu.io/assets/apple-touch-icons/114-24252fe693524ed3a9d0905e49bff3cbd0228f25a320aa09053c2ebb4955de97.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn2.jianshu.io/assets/apple-touch-icons/120-1bb7371f5e87f93ce780a5f1a05ff1b176828ee0d1d130e768575918a2e05834.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn2.jianshu.io/assets/apple-touch-icons/152-bf209460fc1c17bfd3e2b84c8e758bc11ca3e570fd411c3bbd84149b97453b99.png" sizes="152x152">
+
+  <!-- Start of 访问统计 -->
+  <script src="about:blank"></script><script src="about:blank"></script><script async="" src="about:blank"></script><script>/* Code removed by ScrapBook */</script>
+
+<script>/* Code removed by ScrapBook */</script>
+
+  <!-- End of 访问统计 -->
+<style type="text/css">
+/* Code tidied up by ScrapBook */
+.main { position: relative; margin: 0px auto; padding: 0px 0px 30px; width: 620px; }
+.main .title { padding-left: 8px; border-left: 3px solid rgb(234, 111, 90); line-height: 1; font-size: 15px; }
+.main .include-collection { width: 100%; padding-top: 20px; display: flex; -moz-box-orient: horizontal; -moz-box-direction: normal; flex-flow: row wrap; -moz-box-pack: start; justify-content: flex-start; -moz-box-align: center; align-items: center; }
+.main .include-collection .item { display: inline-block; margin: 0px 12px 12px 0px; min-height: 32px; background-color: white; border: 1px solid rgb(220, 220, 220); border-radius: 4px; vertical-align: top; overflow: hidden; }
+.main .include-collection .item img { width: 32px; height: 32px; }
+.main .include-collection .item .name { display: inline-block; padding: 0px 10px; font-size: 14px; }
+</style></head>
+
+  <body class="reader-black-font" lang="zh-CN">
+    <!-- 全局顶部导航栏 -->
+
+
+    
+<div class="note">
+  <div class="post">
+    <div class="article">
+        <h1 class="title">hexo定制&amp;优化</h1>
+
+        <!-- 作者区域 -->
+        <div class="author">
+          <a class="avatar" href="http://www.jianshu.com/u/8495c676bcbd">
+            
+</a>          
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+        <!-- -->
+
+        <!-- 文章内容 -->
+        <div data-note-content="" class="show-content">
+          
+<h2>前言</h2>
+<p>折腾hexo有几天时间了，配合<a href="https://github.com/iissnan/hexo-theme-next" target="_blank">NexT</a>主题，大爱！虽然我写博客主要是用来记录自己的一些知识积累，并不强求有多少人来看，hexo本身已经很优秀了，但有些地方对于强迫症来说还是忍不住想要定制和优化，这样才能让自己更爽~~而且折腾的过程中，也可以学到不少新的知识。</p>
+<h2>静态资源优化</h2>
+<p>主要是压缩html,css,js等等静态资源，可以适当减少请求的数据量，主要用到<code>gulp</code>和一些相关的插件来实现，直接列出我的dependencies.</p>
+<pre class="hljs undefined"><code>"dependencies": {
+  "gulp": "^3.9.1",
+  "gulp-htmlclean": "^2.7.6",
+  "gulp-htmlmin": "^1.3.0",
+  "gulp-imagemin": "^2.4.0",
+  "gulp-minify-css": "^1.2.4",
+  "gulp-uglify": "^1.5.3",
+  "hexo": "^3.2.0",
+  "hexo-deployer-git": "^0.1.0",
+  "hexo-generator-archive": "^0.1.4",
+  "hexo-generator-category": "^0.1.3",
+  "hexo-generator-index": "^0.2.0",
+  "hexo-generator-tag": "^0.2.0",
+  "hexo-generator-sitemap": "^1.1.2",
+  "hexo-generator-baidu-sitemap": "^0.1.2",
+  "hexo-renderer-ejs": "^0.2.0",
+  "hexo-renderer-marked": "^0.2.10",
+  "hexo-renderer-stylus": "^0.3.1",
+  "hexo-server": "^0.2.0"
+}</code></pre>
+<p>其中<code>gulp</code>相关的就是用来压缩静态资源用的，接着还要安装<code>gulp</code>工具：</p>
+<pre class="hljs undefined"><code>$ npm install gulp -g</code></pre>
+<p>然后添加<code>gulpfile.js</code>到根目录。</p>
+<pre class="hljs undefined"><code>var gulp = require('gulp');
+var minifycss = require('gulp-minify-css');
+var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
+var htmlclean = require('gulp-htmlclean');
+// 压缩css文件
+gulp.task('minify-css', function() {
+  return gulp.src('./public/**/*.css')
+  .pipe(minifycss())
+  .pipe(gulp.dest('./public'));
+});
+// 压缩html文件
+gulp.task('minify-html', function() {
+  return gulp.src('./public/**/*.html')
+  .pipe(htmlclean())
+  .pipe(htmlmin({
+    removeComments: true,
+    minifyJS: true,
+    minifyCSS: true,
+    minifyURLs: true,
+  }))
+  .pipe(gulp.dest('./public'))
+});
+// 压缩js文件
+gulp.task('minify-js', function() {
+  return gulp.src('./public/**/*.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('./public'));
+});
+// 默认任务
+gulp.task('default', [
+  'minify-html','minify-css','minify-js'
+]);</code></pre>
+<p>以后generate的时候跟上gulp命令即可压缩静态资源。</p>
+<pre class="hljs undefined"><code>$ hexo g
+$ gulp
+$ hexo d</code></pre>
+<h2>生成sitemap文件</h2>
+<p>生成sitemap文件然后提交给搜索引擎，对于SEO很有帮助，hexo有相关的sitemap插件。</p>
+<pre class="hljs undefined"><code>"hexo-generator-sitemap": "^1.1.2",
+"hexo-generator-baidu-sitemap": "^0.1.2",</code></pre>
+<p>安装这俩插件后，以后每次<code>hexo g</code>都会生成sitemap.xml和baidusitemap.xml文件并自动帮你放到public目录。很省心~</p>
+<h2>修改permalink</h2>
+<p>hexo默认的permalink配置是：</p>
+<pre class="hljs undefined"><code>permalink: :year/:month/:day/:title/</code></pre>
+<p>这样生成的访问链接都是类似<code>http://yoursite.com/2016/05/06/your_title/</code>这样的，有点动态网站的风格，不过这样可能对于搜索引擎不是太友好，我们可以把permalink修改成.html结尾的：</p>
+<pre class="hljs undefined"><code>permalink: :year/:month/:day/:title.html</code></pre>
+<p>还有一点需要注意的是，title最好是英文的，这样permalink也是不带中文的，但是markdown文件中的title你还是可以按自己的文章标题写成中文的。</p>
+<h2>其他小的修改点</h2>
+<p>这些都是看个人爱好了，hexo还是很方便自己自定义的。</p>
+<h3>站点头像改成圆形</h3>
+<p>在<code>themes/next/source/css/_common/components/sidebar/sidebar-author.styl</code>中<code>.site-author-image</code>定义中增加：</p>
+<pre class="hljs undefined"><code>border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;</code></pre>
+<h3>去掉站点链接前面的小圆点</h3>
+<p>个人不太喜欢站点链接前面的小圆点，去掉<code>themes/next/source/css/_common/components/sidebar/sidebar-author-links.styl</code>中<code>a::before</code>的定义即可。</p>
+<h3>小技巧</h3>
+<p>有其他想修改的小地方，都可以打开浏览器的开发者工具，找到对应地方的css定义，然后在sublime或者atom中<code>Search In Directory</code>找到对应css的源码，修改即可。</p>
+<h2>解决github pages屏蔽百度爬虫的问题</h2>
+<p>嗯，是的，github pages屏蔽了百度爬虫(屏蔽了百度爬虫的UA<code>Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)</code>)。这样你的hexo博客很难被百度收录，从百度站长工具抓取诊断中就可以发现爬取都是403 forbidden。</p>
+<pre class="hljs undefined"><code>HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/html</code></pre>
+<p>本来也无所谓，但是从技术的角度来看，解决这种问题肯定很有快感~~<br>目前主要有两种解决方案：<code>CDN回源</code>和<code>为百度spider指定特殊线路</code>。两种方案我都试过，最终选择了后者。</p>
+<h3>CDN回源</h3>
+<p>hexo博客都是静态文件，很适合使用CDN回源，这样不仅能提高访问速度还能跳过github对百度爬虫的屏蔽。<br>回源的意思是用户请求hexo之后CDN会抓取hexo内容，这样其他用户就不用访问github pages了而是直接从CDN就近的节点拉取数据，访问速度更快。但是这里有个问题，比如百度爬虫所在的区域CDN节点还没有缓存hexo数据，这样百度爬虫会穿透CDN直接请求到github pages，然后后果就是github pages返回403 forbidden。所以CDN回源的方式仅适用于博客访客量比较大的情况（这样访问会在百度爬虫之前让CDN缓存hexo数据，当然也只是比较大的概率）。<br>不过如果无视百度爬虫，给hexo加上CDN回源也是很不错的，至少能提高访问速度。推荐使用<a href="https://www.upyun.com/index.html" target="_blank">又拍云</a>。大概的配置步骤：</p>
+<h4>配置服务</h4>
+<div class="image-package">
+<img src="upyun_cdn_1.png" data-original-src="http://kikoroc.qiniudn.com/upyun_cdn_1.png" style="cursor: zoom-in;"><br><div class="image-caption">配置upyun服务</div>
+</div>
+<h4>添加CNAME解析</h4>
+<pre class="hljs undefined"><code>CNAME @ kikoroc.b0.aicdn.com</code></pre>
+<p>同时去掉到github pages ip的A类解析。</p>
+<h3>为百度spider指定特殊线路</h3>
+<p>除了github pages能托管hexo之外，还有其他的选择，比如gitcafe pages(已经和coding.net合并)。传送门：<a href="https://coding.net/help/doc/pages/index.html" target="_blank">gitcafe pages配置</a>，配置还是挺简单的。而且gitcafe没有屏蔽百度爬虫。但是gitcafe pages的服务器目前还不够github给力（偶尔出现一些无法打开的情况），所以有了新的思路：</p>
+<h4>hexo deploy同时部署到github和coding.net</h4>
+<pre class="hljs undefined"><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  #repo: https://github.com/kikoroc/kikoroc.github.io.git
+  #branch: master
+  repo: git@git.coding.net:/kikoroc/kikoroc
+  branch: coding-pages</code></pre>
+<p>后面有时间可以写个脚本直接同时部署github和gitcafe。</p>
+<h4>正常用户访问github pages，百度爬虫访问gitcafe</h4>
+<p>现在的DNS解析服务一般都可以指定特定的线路，比如指定百度爬虫的线路解析到gitcafe。<br></p><div class="image-package">
+<img src="2016917-5a1851b99a80fedf.png" data-original-src="http://upload-images.jianshu.io/upload_images/2016917-5a1851b99a80fedf.png?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption">dnspod设置</div>
+</div><p><br>gitcafe pages绑定域名到kikoroc.com。</p>
+<p>-EOF-</p>
+
+        </div>
+        <!--  -->
+
+        
+    </div>
+
+    <!-- 文章底部作者信息 -->
+      
+
+      
+
+    
+    <div id="vue_comment"></div>
+  </div>
+
+  <div class="side-tool"><ul><li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="回到顶部" style="display: none;"><a class="function-button"><i class="iconfont ic-backtop"></i></a></li> <!----> <!----> <li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="分享文章"> <!----></li></ul></div>
+</div>
+
+
+    <script type="application/json" data-name="page-data">/* Code removed by ScrapBook */</script>
+    
+    <script src="about:blank"></script>
+    <script src="about:blank"></script>
+<script src="about:blank"></script>
+    
+    <script src="about:blank"></script>
+    <script>/* Code removed by ScrapBook */</script>
+
+  
+
+<!----><!---->
+
+</body></html>
